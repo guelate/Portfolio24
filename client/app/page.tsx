@@ -9,14 +9,14 @@ const navigation = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+    <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden ">
       <nav className="my-5 animate-fade-in">
         <ul className="flex items-center justify-center gap-4 mr-5">
           {navigation.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+              className="text-sm duration-500 text-[#94a3b8] hover:text-white"
             >
               {item.name}
             </Link>
@@ -37,3 +37,7 @@ export default function Home() {
     </div>
   );
 }
+
+{/* <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black"> */}
+
+// bg-#0a101f
