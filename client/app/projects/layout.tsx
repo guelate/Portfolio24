@@ -2,7 +2,7 @@ export default function ProjectsLayout({
 	children,
 }: { children: React.ReactNode }) {
 	return (
-		<div className="">
+		<div className="bg-[#030712]">
 			{children}
 		</div>
 	);

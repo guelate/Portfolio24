@@ -4,8 +4,11 @@ import LocalFont from "next/font/local";
 import { Metadata } from "next";
 // import { Analytics } from "./components/analytics";
 
+
+
 export const metadata: Metadata = {
 
+  //FIX HERE
 
   title: {
     default: "chronark.com",
@@ -39,6 +42,9 @@ export const metadata: Metadata = {
   //     "max-snippet": -1,
   //   },
   // },
+
+
+    //FIX HERE
   twitter: {
     title: "Chronark",
     card: "summary_large_image",
@@ -47,6 +53,7 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
   },
 };
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -54,7 +61,7 @@ const inter = Inter({
 
 const calSans = LocalFont({
   src: "../public/fonts/CalSans-SemiBold.ttf",
-  variable: "--font-calsans",
+  variable: "--font-secondary",
 });
 
 export default function RootLayout({
@@ -68,7 +75,7 @@ export default function RootLayout({
         <Analytics />
       </head> */}
       <body
-        className={`bg-[#0a101f] ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        className={`bg-[#030712] ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
           }`}
       >
         {children}

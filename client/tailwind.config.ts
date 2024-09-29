@@ -36,8 +36,12 @@ module.exports = {
     		},
     		fontFamily: {
     			sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
-    			display: ["var(--font-calsans)"]
+    			display: ["var(--font-calsans)"],
+				secondary: ["var(--font-secondary)", ...defaultTheme.fontFamily.mono], 
     		},
+			fontSize: {
+				xs: "0.75rem",
+			  },
     		backgroundImage: {
     			'gradient-radial': 'radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))'
     		},
@@ -106,10 +110,10 @@ module.exports = {
     			},
 				blink: {
 					"0%, 100%": {
-					  backgroundColor: "#fef08a", // Couleur jaune clair
+					  backgroundColor: "white", // Couleur jaune clair
 					},
 					"50%": {
-					  backgroundColor: "#facc15", // Couleur jaune plus foncé
+					  backgroundColor: "#b4b1b1", // Couleur jaune plus foncé
 					},
 				  },
     		},

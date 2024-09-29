@@ -1,7 +1,8 @@
 import React from "react";
 import { Navigation } from "../components/nav";
 import HomeHeader from "../components/HomeHeader";
-import CardProject from "../components/cardProject";
+import CardProject from "../components/CardProject";
+import CardProject1 from "../components/CardProject1";
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
@@ -9,22 +10,21 @@ export default async function ProjectsPage() {
     <div className="h-screen">
       <Navigation />
 
-      <div className="border pt-20 md:pt-24">
+      <div className="pt-20 md:pt-24">
         <HomeHeader />
 
         <div className="w-full h-px bg-zinc-800" />
 
-        <div className="border w-4/4">
-       
-          <div className="border w-full p-4">
+        <div className="w-4/4">
+          <div className="w-full p-4">
             <h2 className="text-white text-center mb-4">Some realisations</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <CardProject title="Project 1" status="In progress">
+              <CardProject1 title="Project 1" status="In progress">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequatur dicta quis, possimus tempore architecto non unde.
                 Architecto veritatis magnam, autem eveniet fugiat dignissimos
                 laboriosam tempora est illum consequuntur, labore vero!
-              </CardProject>
+              </CardProject1>
               <div className="flex flex-col gap-10">
                 <CardProject title="Project 2" status="In progress">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
