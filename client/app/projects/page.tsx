@@ -17,8 +17,8 @@ export default async function ProjectsPage() {
 
         <div className="w-4/4">
           <div className="w-full p-4">
-            <h2 className="text-white text-center mb-4">Some realisations</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <h2 className="text-white text-center mb-4 md:text-3xl font-secondary tracking-widest">Some realisations</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:mt-5">
               <CardProject1 title="Project 1" status="In progress">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consequatur dicta quis, possimus tempore architecto non unde.
@@ -43,7 +43,6 @@ export default async function ProjectsPage() {
           </div>
         </div>
 
-        <div className="hidden w-full h-px md:block bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3"></div>
       </div>

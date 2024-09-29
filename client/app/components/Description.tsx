@@ -2,9 +2,9 @@
 
 export default function Description() {
   return (
-    <div className="flex flex-col gap-2 text-zinc-300 hover:text-white">
-      <p className="text-sm md:text-base lg:text-lg">
-        I build web apps that turn ideas into reality 💭 💻
+    <div className="flex flex-col gap-2 text-[#94a3b8] hover:text-white">
+      <p className="text-sm md:text-lg lg:text-lg">
+      Build Unbounded 💭 💻
       </p>
     </div>
   );

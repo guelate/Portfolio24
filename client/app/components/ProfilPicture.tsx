@@ -1,6 +1,6 @@
 import { Avatar } from "@/components/ui/avatar"
 import Image from 'next/image'
-import profil from "../../public/og.png"
+import profil from "../../public/profil.png"
 
 export default function ProfilPicture() {
   return (
