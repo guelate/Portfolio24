@@ -20,8 +20,8 @@ export default function CardProject({
           </div>
           <div className="flex flex-col gap-3">
             <p className="text-[#94a3b8] font-secondary tracking-widest md:text-lg text-base leading-loose">{children}</p>
-            <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block font-secondary ">
-              Read more <span aria-hidden="true" className="pl-2 items-center justify-center text-base">&rarr;</span>
+            <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block font-secondary cursor-not-allowed">
+              Read more <span aria-hidden="true" className="pl-2 items-center justify-center text-base cursor-not-allowed">&rarr;</span>
             </p>
           </div>
         </div>

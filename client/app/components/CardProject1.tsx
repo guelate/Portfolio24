@@ -30,11 +30,11 @@ export default function CardProject1({
               {children}
             </p>
 
-            <p className="hidden text-zinc-200  hover:text-zinc-50 lg:block font-secondary ">
+            <p className="hidden text-zinc-200  hover:text-zinc-50 lg:block font-secondary cursor-not-allowed">
               Read more{" "}
               <span
                 aria-hidden="true"
-                className="pl-2 items-center justify-center"
+                className="pl-2 items-center justify-center cursor-not-allowed"
               >
                 &rarr;
               </span>

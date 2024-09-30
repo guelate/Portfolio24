@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Portfolio Website",
 
   icons: {
-    shortcut: "/favicon.png",
+    icon: "/icon.png",
   },
 };
 
