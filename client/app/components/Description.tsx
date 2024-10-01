@@ -6,7 +6,7 @@ export default function Description() {
       <p className="text-sm md:text-lg lg:text-lg">
       Build Unbounded 💭 💻
       </p>
-      <p className="md:hidden lg:hidden">🚧 WORK IN PROGRESS 🚧</p>
+      <p className="">🚧 WORK IN PROGRESS 🚧</p>
     </div>
   );
 }
