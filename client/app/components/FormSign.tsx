@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+
 import {
   Card,
   CardHeader,
   CardTitle,
-  CardDescription,
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
@@ -60,7 +60,7 @@ export default function FormSign({ closeDialog }: FormSignProps) {
               id="email"
               type="email"
               placeholder="Enter your mail"
-              className="cursor-not-allowed"
+              className="cursor-not-allowed rounded-md p-3"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -74,7 +74,7 @@ export default function FormSign({ closeDialog }: FormSignProps) {
               id="subject"
               type="text"
               placeholder="Enter your subject"
-              className="cursor-not-allowed"
+              className="cursor-not-allowed rounded-md p-3"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               required
@@ -87,7 +87,7 @@ export default function FormSign({ closeDialog }: FormSignProps) {
             <Textarea
               id="message"
               placeholder="Enter your message"
-              className="min-h-[100px] cursor-not-allowed"
+              className="min-h-[100px] cursor-not-allowed rounded-md p-3"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
@@ -99,7 +99,7 @@ export default function FormSign({ closeDialog }: FormSignProps) {
 
           <Button
             type="submit"
-            className="md:w-1/3 text-sm bg-slate-200 hover:bg-gray-300 hover:shadow-sm cursor-not-allowed"
+            className="md:w-1/3 text-sm bg-slate-200 hover:bg-gray-300 hover:shadow-sm cursor-not-allowed p-3"
             >
             WORK IN PROGRESS
           </Button>
