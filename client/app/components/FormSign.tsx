@@ -26,56 +26,68 @@ export default function FormSign({ closeDialog }: FormSignProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically send the data to your backend or perform some action
     console.log({ email, subject, message });
-    // Reset form fields after submission
+
     setEmail("");
     setSubject("");
     setMessage("");
   };
 
   return (
-    <Card className="w-full max-w-md mx-auto bg-white h-20">
+    <Card className="flex flex-col bg-transparent w-full border-none cursor-not-allowed">
+
       <CardHeader>
-        <CardTitle>New Mail</CardTitle>
-        <Button
-          onClick={closeDialog}
-          className="text-gray-500 hover:text-gray-700"
-        >
-          &times;
-        </Button>
-        <CardDescription>Compose a new email message</CardDescription>
+        <div className="flex items-center justify-between w-full md:pl-40 pl-10 text-[#0a101f]">
+          <CardTitle>
+            <h1 className="text-black text-xl md:text-2xl">Contact Me</h1>
+          </CardTitle>
+
+          <Button
+            onClick={closeDialog}
+            className="text-[#0a101f]  text-1xl hover:text-gray-300 focus:outline-none"
+          >
+            &times;
+          </Button>
+        </div>
       </CardHeader>
       <form onSubmit={handleSubmit}>
         <CardContent className="space-y-4">
           <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email" className="text-[#0a101f] ">
+              Email
+            </Label>
             <Input
               id="email"
               type="email"
-              placeholder="recipient@example.com"
+              placeholder="Enter your mail"
+              className="cursor-not-allowed"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="subject">Subject</Label>
+            <Label htmlFor="subject" className="text-[#0a101f]">
+              Subject
+            </Label>
             <Input
               id="subject"
               type="text"
-              placeholder="Enter subject"
+              placeholder="Enter your subject"
+              className="cursor-not-allowed"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               required
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="message">Message</Label>
+            <Label htmlFor="message" className="text-[#0a101f]">
+              Message
+            </Label>
             <Textarea
               id="message"
-              placeholder="Type your message here"
-              className="min-h-[100px]"
+              placeholder="Enter your message"
+              className="min-h-[100px] cursor-not-allowed"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
@@ -83,48 +95,17 @@ export default function FormSign({ closeDialog }: FormSignProps) {
           </div>
         </CardContent>
         <CardFooter>
-          <Button type="submit" className="w-full">
-            Send Mail
+          <div className="flex w-full justify-center">
+
+          <Button
+            type="submit"
+            className="md:w-1/3 text-sm bg-slate-200 hover:bg-gray-300 hover:shadow-sm cursor-not-allowed"
+            >
+            WORK IN PROGRESS
           </Button>
+            </div>
         </CardFooter>
       </form>
     </Card>
-    //   <div className="flex flex-col">
-    //     {/* Dialog Header */}
-
-    //     <div className="flex p-4 justify-center">
-    //       <div className="flex justify-between w-full ">
-    //         <h2 className="text-lg font-semibold px-40">Hello</h2>
-    //         <button
-    //           onClick={closeDialog}
-    //           className="text-gray-500 hover:text-gray-700"
-    //         >
-    //           &times;
-    //         </button>
-    //       </div>
-    //     </div>
-    //     {/* TITLE IF */}
-
-    //     {/* Dialog Content */}
-    //     <div className="flex flex-col border">
-    //       <p className="p-4">
-    //         This is the content of the dialog. You can place any text or elements
-    //         here.
-    //       </p>
-    //     </div>
-
-    //     {/* Dialog Footer */}
-    //     <div className="">
-    //       <button
-    //         onClick={closeDialog}
-    //         className="px-4 py-2 bg-gray-500 text-white rounded-md"
-    //       >
-    //         Cancel
-    //       </button>
-    //       <button className="px-4 py-2 bg-blue-500 text-white rounded-md">
-    //         Confirm
-    //       </button>
-    //     </div>
-    //   </div>
   );
 }
