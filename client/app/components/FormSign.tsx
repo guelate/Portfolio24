@@ -37,9 +37,9 @@ export default function FormSign({ closeDialog }: FormSignProps) {
     <Card className="flex flex-col bg-transparent w-full border-none cursor-not-allowed">
 
       <CardHeader>
-        <div className="flex items-center justify-between w-full md:pl-40 pl-10 text-[#0a101f]">
-          <CardTitle>
-            <h1 className="text-black text-xl md:text-2xl">Contact Me</h1>
+        <div className="flex items-center justify-between w-full text-[#0a101f]">
+          <CardTitle className="w-full text-center">
+            <h1 className="text-[#0a101f] text-xl md:text-2xl">Contact Me</h1>
           </CardTitle>
 
           <Button
@@ -60,7 +60,7 @@ export default function FormSign({ closeDialog }: FormSignProps) {
               id="email"
               type="email"
               placeholder="Enter your mail"
-              className="cursor-not-allowed rounded-md p-3"
+              className="cursor-not-allowed rounded-md p-3 text-sm"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -74,7 +74,7 @@ export default function FormSign({ closeDialog }: FormSignProps) {
               id="subject"
               type="text"
               placeholder="Enter your subject"
-              className="cursor-not-allowed rounded-md p-3"
+              className="cursor-not-allowed rounded-md p-3 text-sm"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
               required
@@ -87,7 +87,7 @@ export default function FormSign({ closeDialog }: FormSignProps) {
             <Textarea
               id="message"
               placeholder="Enter your message"
-              className="min-h-[100px] cursor-not-allowed rounded-md p-3"
+              className="min-h-[100px] cursor-not-allowed rounded-md p-3 text-sm"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
@@ -95,11 +95,11 @@ export default function FormSign({ closeDialog }: FormSignProps) {
           </div>
         </CardContent>
         <CardFooter>
-          <div className="flex w-full justify-center">
+          <div className="flex w-full justify-center items-center">
 
           <Button
             type="submit"
-            className="md:w-1/3 text-sm bg-slate-200 hover:bg-gray-300 hover:shadow-sm cursor-not-allowed p-3"
+            className="text-sm bg-slate-200 hover:bg-gray-300 hover:shadow-sm cursor-not-allowed p-3"
             >
             WORK IN PROGRESS
           </Button>
