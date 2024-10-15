@@ -59,7 +59,7 @@ export default function FormSign({ closeDialog }: FormSignProps) {
             <Input
               id="email"
               type="email"
-              placeholder="Enter your mail"
+              placeholder="Enter your email"
               className="cursor-not-allowed rounded-md p-3 text-sm"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
